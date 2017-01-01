@@ -23,5 +23,9 @@ dist/
 nbdist/
 .nb-gradle/
 
+# log files
+log/
+*.log
+
 # temporary files
 *~
