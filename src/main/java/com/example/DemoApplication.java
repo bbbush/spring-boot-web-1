@@ -25,7 +25,9 @@ public class DemoApplication extends SpringBootServletInitializer {
     }
 
     private static SpringApplicationBuilder configureApplication(SpringApplicationBuilder appBuilder) {
-        return appBuilder.sources(DemoApplication.class);
+        return appBuilder.sources(DemoApplication.class)
+            .sources(Initializer.class)
+            .initializers();
     }
 }
 
